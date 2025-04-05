@@ -10,3 +10,5 @@ INPUT_PATH = os.path.join(BASE_PATH, "input_data/member_dataset.txt")
 BRONZE_PATH = os.path.join(BASE_PATH, "bronze")
 SILVER_PATH = os.path.join(BASE_PATH, "silver")
 GOLD_PATH = os.path.join(BASE_PATH, "gold")
+REJECTED_PATH = os.path.join(BASE_PATH, "rejected")
+
