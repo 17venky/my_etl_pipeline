@@ -1,2 +1,2 @@
-def log(message):
-    print(f"[INFO] {message}")
+def read_json_file(spark, path):
+    return spark.read.option("multiline", "true").json(path).collect()
