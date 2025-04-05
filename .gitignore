@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Databricks Repos metadata
+*.dbc
+.notebook-metadata.json
+
+# Databricks local file system (DBFS mounts)
+dbfs:/FileStore/*
+dbfs:/databricks/*
