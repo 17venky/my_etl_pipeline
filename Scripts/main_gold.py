@@ -4,7 +4,7 @@ import os
 if __name__ == "__main__":
     spark = SparkSession.builder.appName("Gold Job").getOrCreate()
 
-    BASE_PATH = "/Workspace/Users/venkateshreddy0086@gmail.com/my_etl_pipeline"
+    BASE_PATH = "/Volumes/workspace/default/venky"
     SILVER_PATH = os.path.join(BASE_PATH, "silver")
     GOLD_PATH = os.path.join(BASE_PATH, "gold")
 
