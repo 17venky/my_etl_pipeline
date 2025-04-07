@@ -113,7 +113,7 @@
           "position": 157,
           "length": 10,
           "validationType": "regex",
-          "validationValues": "^[0-9]{2}$",
+          "validationValues": "^[0-9]{10}$",
           "reactionCode": "INVALID PHONE NUMBER",
           "reactionType": "Reject Record"
         },
