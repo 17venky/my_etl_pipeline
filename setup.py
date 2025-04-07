@@ -6,6 +6,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         'pyspark',
+        "pytest",
+        "pandas",
         'jsonschema',
         # Add other dependencies
     ],
