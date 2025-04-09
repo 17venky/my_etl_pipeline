@@ -45,8 +45,9 @@ run_step() {
   if [ $? -ne 0 ]; then
     echo "$STEP_NAME step failed. Sending alert email..."
 
-    echo -e "Subject: ${APP_NAME} - ${STEP_NAME} Failed\n\nCheck logs at ${LOG_PATH}/${STEP_NAME}_${timestamp}.log" \
-      | sendmail "$MAIL_TO"
+    echo -e "Check logs at ${LOG_PATH}/${STEP_NAME}_${timestamp}.log" \
+      | mail -s "${APP_NAME} - ${STEP_NAME} Failed" "$MAIL_TO"
+
 
     echo "$STEP_NAME failed. Aborting pipeline."
     exit 1
